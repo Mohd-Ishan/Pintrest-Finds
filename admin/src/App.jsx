@@ -9,7 +9,7 @@ import { Route, Routes } from 'react-router-dom';
 
 const App = () => {
 
-  const url = 'http://localhost:5000'
+  const url = 'https://pintrest-finds.onrender.com'
 
   return (
     <div>
