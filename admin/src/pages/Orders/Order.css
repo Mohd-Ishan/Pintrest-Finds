@@ -1,0 +1,152 @@
+.order{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-bottom-line{
+  border: solid 0.5px rgb(140, 138, 138) ;
+   width: 97.7%;
+   margin-top: 50px;
+}
+
+.order-title{
+  width: 97.7%;
+  margin-top: 100px;
+}
+.order-title p{
+  font-size: 9px;
+  color: rgb(140, 138, 138) ;
+   letter-spacing: 1px;
+   font-weight: 500;
+   margin-bottom: 25px;
+}
+.order-title h1{
+  font-size: 50px;
+  color: rgb(219, 215, 215);
+  letter-spacing: 1px;
+  line-height: 55px;
+  text-transform: uppercase;
+  
+}
+.order-title h1::first-letter{
+  color: rgb(133, 21, 21);
+}
+.order-title h1:hover{
+  color: rgb(140, 138, 138) ;
+  cursor: pointer;
+}
+
+
+
+.order-item {
+  display: grid;
+  grid-template-columns: 0.6fr 2fr 1fr 1fr 1fr;
+  align-items: start;
+  gap: 25px;
+  border: 1px solid rgba(255, 99, 71, 0.4);
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 22px 26px;
+  font-size: 14px;
+  color: #444;
+  margin: 28px 0;
+  box-shadow: 0 4px 10px rgba(255, 99, 71, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Hover Animation */
+.order-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(255, 99, 71, 0.2);
+  border-color: red;
+}
+
+/* Product Image */
+.order-item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Text Styling */
+.order-item-food,
+.order-item-name {
+  font-weight: 600;
+  color: #222;
+}
+
+.order-item-name {
+  margin-top: 25px;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.order-item-address {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Select Dropdown */
+.order-item select {
+  background-color: rgb(174, 8, 8);
+  border: 1px solid red;
+  border-radius: 8px;
+  width: max(10vw, 130px);
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.3s ease;
+  appearance: none; /* hide default arrow */
+
+}
+
+/* On Hover/Focus */
+.order-item select:hover,
+.order-item select:focus {
+  background-color: rgb(154, 11, 11);
+  border-color: rgb(150, 10, 10);
+  box-shadow: 0 0 5px rgba(255, 99, 71, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+  .order-item {
+    grid-template-columns: 0.6fr 2fr 1fr;
+    gap: 18px;
+    font-size: 13px;
+    padding: 16px 12px;
+  }
+
+  .order-item select {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .order-item img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 700px) {
+  .order-item {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .order-item img {
+    margin: 0 auto;
+  }
+
+  .order-item select {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Roboto Mono;
+  scroll-behavior: smooth;
+}
+body{
+  min-height: 100vh;
+  background-color: black;
+}
+
+ body::-webkit-scrollbar {
+  display: none;
+}
+a{
+  text-decoration:none;
+  color: inherit;
+}
+
+@keyframes slideDown {
+  0%{
+    position: absolute;
+    top: -100px;
+  }
+  100%{
+    position: absolute;
+    top: 0;
+  }
+}
+
+@keyframes slideLeft {
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{ 
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{ 
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes slideUp {
+  0%{
+    transform: translateY(200%);
+  }
+  100%{ 
+    transform: translateY(0);
+  }
+}
+
+
+

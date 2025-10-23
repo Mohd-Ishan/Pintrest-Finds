@@ -1,0 +1,147 @@
+.list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-bottom-line{
+  border: solid 0.5px rgb(140, 138, 138) ;
+   width: 97.7%;
+   margin-top: 50px;
+}
+
+.list-title{
+  width: 97.7%;
+  margin-top: 100px;
+}
+.list-title p{
+  font-size: 9px;
+  color: rgb(140, 138, 138) ;
+   letter-spacing: 1px;
+   font-weight: 500;
+   margin-bottom: 25px;
+}
+.list-title h1{
+  font-size: 50px;
+  color: rgb(219, 215, 215);
+  letter-spacing: 1px;
+  line-height: 55px;
+  text-transform: uppercase;
+  
+}
+.list-title h1::first-letter{
+  color: rgb(133, 21, 21);
+}
+.list-title h1:hover{
+  color: rgb(140, 138, 138) ;
+  cursor: pointer;
+}
+
+/*list show css*/
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-bottom-line {
+  border: solid 0.5px rgba(140, 138, 138, 0.4);
+  width: 97%;
+  margin-top: 30px;
+}
+
+.list-title {
+  width: 97%;
+  margin-top: 80px;
+}
+
+.list-title h1 {
+  font-size: 42px;
+  color: #dcdcdc;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.list-title h1::first-letter {
+  color: rgb(133, 21, 21);
+}
+
+.list.add.flex-col {
+  width: 95%;
+  margin-top: 40px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+}
+
+.list.add.flex-col > p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #bdbdbd;
+}
+
+/* Table */
+.list-table {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.list-table-format {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 0.5fr;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e0e0e0;
+  transition: all 0.2s ease;
+}
+
+.list-table-format.title {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #bfbfbf;
+  font-weight: 600;
+}
+
+.list-table-format:hover {
+  background-color: rgba(255, 255, 255, 0.07);
+  transform: scale(1.01);
+}
+
+.list-table-format img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.no-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 12px;
+}
+
+.cursor {
+  cursor: pointer;
+  color: rgb(220, 70, 70);
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.cursor:hover {
+  color: rgb(255, 0, 0);
+  transform: scale(1.2);
+}

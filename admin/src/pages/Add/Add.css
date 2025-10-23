@@ -1,0 +1,294 @@
+.add{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-bottom-line{
+  border: solid 0.5px rgb(140, 138, 138) ;
+   width: 97.7%;
+   margin-top: 50px;
+}
+
+.add-title{
+  width: 97.7%;
+  margin-top: 100px;
+}
+.add-title p{
+  font-size: 9px;
+  color: rgb(140, 138, 138) ;
+   letter-spacing: 1px;
+   font-weight: 500;
+   margin-bottom: 25px;
+}
+.add-title h1{
+  font-size: 50px;
+  color: rgb(219, 215, 215);
+  letter-spacing: 1px;
+  line-height: 55px;
+  text-transform: uppercase;
+  
+}
+.add-title h1::first-letter{
+  color: rgb(133, 21, 21);
+}
+.add-title h1:hover{
+  color: rgb(140, 138, 138) ;
+  cursor: pointer;
+}
+
+
+/* Form Container */
+.main-add {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.main-add form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  gap: 30px;
+  width: 80%;
+  transition: all 0.3s ease;
+}
+
+.main-add form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.45);
+}
+
+/* Image Upload */
+.add-image-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.add-image-upload img {
+  width: 160px;
+  height: 160px;
+  border-radius: 5%;
+  object-fit: cover;
+  border: 2px dashed #8a8a8a;
+  background-color: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-image-upload img:hover {
+  border-color: rgb(133, 21, 21);
+  transform: scale(0.97);
+}
+
+/* Image Preview Grid */
+.image-preview-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.image-preview-grid img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+}
+
+.image-preview-grid img:hover {
+  transform: scale(1.05);
+  border-color: rgb(133, 21, 21);
+}
+
+/* “+” add more button */
+.add-more {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 36px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.add-more:hover {
+  border-color: rgb(133, 21, 21);
+  color: rgb(133, 21, 21);
+}
+
+/* Input Fields */
+.add-product-name,
+.add-product-description,
+.add-category-price {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.add-product-name input,
+.add-product-description textarea,
+.add-category-price select,
+.add-category-price input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.08);
+  color: white;
+  outline: none;
+  transition: all 0.3s ease;
+  font-size: 15px;
+}
+
+.add-product-name input:focus,
+.add-product-description textarea:focus,
+.add-category-price select:focus,
+.add-category-price input:focus {
+  border-color: rgb(133, 21, 21);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Category + Price Row */
+.add-category-price {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.add-category-price select,
+.add-category-price input {
+  flex: 1;
+}
+
+.add-category {
+  width: 300px;
+}
+
+.add-category option {
+  background-color: black;
+}
+
+/* Labels */
+form p {
+  margin-bottom: 6px;
+  color: #b9b9b9;
+  font-weight: 500;
+}
+
+/* Submit Button */
+.add-btn {
+  background: linear-gradient(135deg, rgb(133, 21, 21), rgb(61, 8, 8));
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.add-btn:hover {
+  background: linear-gradient(135deg, rgb(168, 28, 28), rgb(88, 11, 11));
+  transform: scale(1.05);
+}
+
+/* ---------------- RESPONSIVE DESIGN ---------------- */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .main-add form {
+    flex-direction: column;
+    width: 90%;
+    padding: 35px 30px;
+  }
+
+  .add-image-upload img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .add-title h1 {
+    font-size: 42px;
+  }
+}
+
+/* Mobile Landscape */
+@media (max-width: 768px) {
+  .add-title h1 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .main-add form {
+    width: 95%;
+    padding: 25px 20px;
+    gap: 20px;
+  }
+
+  .add-category-price {
+    flex-direction: column;
+  }
+
+  .add-btn {
+    align-self: center;
+    width: 100%;
+  }
+
+  .add-image-upload img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+  .add-title h1 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .add-title p {
+    font-size: 9px;
+  }
+
+  .main-add form {
+    padding: 20px 15px;
+    gap: 15px;
+  }
+
+  .add-image-upload img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .image-preview-grid img,
+  .add-more {
+    width: 80px;
+    height: 80px;
+  }
+
+  .add-btn {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+}
