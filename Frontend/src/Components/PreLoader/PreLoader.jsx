@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Preloader.css";
+import "./PreLoader.css";
 
 const Preloader = () => {
   const [progress, setProgress] = useState(0);
