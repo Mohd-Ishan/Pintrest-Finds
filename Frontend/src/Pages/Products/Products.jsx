@@ -5,6 +5,8 @@ import { StoreContext } from '../../context/StoreContext'
 
 const Products = () => {
 
+    document.title='Product';
+
   const {Product_list} =useContext(StoreContext)
   return (
     <div className='Product'>

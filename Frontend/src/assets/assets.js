@@ -7,7 +7,7 @@ import video3 from './video3.mp4'
 import video4 from './video4.mp4'
 import video5 from './video5.mp4'
 import video6 from './video6.mp4'
-
+import video7 from './video7.mp4'
 import header_img from './header_img.png'
 import search_icon from './search_icon.png'
 import menu_1 from './menu_1.png'
@@ -51,6 +51,7 @@ export const assets = {
     video4,
     video5,
     video6,
+    video7,
     basket_icon,
     header_img,
     search_icon,

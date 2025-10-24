@@ -4,6 +4,8 @@ import { StoreContext } from '../../context/StoreContext'
 import ProductCard from '../../Components/Product-Card/ProductCard'
 
 const ProductCategory = (props) => {
+
+    document.title='Product Category';
   
   const {Product_list} = useContext(StoreContext)
   return (

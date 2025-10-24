@@ -48,9 +48,6 @@ const prevVideo = () => {setCurrent((prev) => (prev - 1 + videoData.length) % vi
   const handleVideoEnd = () => {
     nextVideo()
   }
-
-
-
   return (
     <div className="header">
       <video
