@@ -7,7 +7,7 @@ const StoreContextProvider = (props) =>{
 
  const [cartItems,setCartItems] = useState({});
 
- const url = 'http://localhost:5000';
+ const url = 'https://pintrest-finds.onrender.com';
  const [token,setToken] = useState('');
  const [Product_list,setProductList] = useState([])
 

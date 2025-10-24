@@ -12,5 +12,3 @@ createRoot(document.getElementById('root')).render(
     </BrowserRouter>
 )
 
-// https://pintrest-finds-admin.onrender.com
-//https://pintrest-finds-frontend1.onrender.com/

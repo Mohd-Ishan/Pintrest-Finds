@@ -12,7 +12,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 const placeOrder = async(req,res)=>{
 
-  const frontend_url = 'http://localhost:5173';
+  const frontend_url = 'https://pintrest-finds-frontend1.onrender.com/';
 
     const {userId,items,address,amount} = req.body;
   try {
