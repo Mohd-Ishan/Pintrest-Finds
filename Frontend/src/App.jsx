@@ -14,7 +14,7 @@ import Verify from './Pages/verify/Verify';
 import MyOrders from './Pages/myorders/myOrders';
 import ProductDetails from './Pages/Detailspage/Details';
 import { StoreContext } from './context/StoreContext';
-import PreLoader from './Components/PreLoader/PreLoader';
+import Preloader from './Components/PreLoader/PreLoader';
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -35,7 +35,7 @@ const App = () => {
   }, []);
 
   if (loading) {
-    return <PreLoader />;
+    return <Preloader />;
   }
 
   return (
