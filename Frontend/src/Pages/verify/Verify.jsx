@@ -7,6 +7,8 @@ import { useEffect } from 'react';
 
 const Verify = () => {
 
+    document.title='Verify';
+
  const [serachParams,setSearchParams] = useSearchParams();
  const success = serachParams.get('success');
  const orderId = serachParams.get('orderId');

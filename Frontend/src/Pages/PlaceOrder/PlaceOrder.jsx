@@ -7,6 +7,8 @@ import axios from 'axios';
 
 const PlaceOrder = () => {
 
+    document.title='Place Order';
+
    const { getTotalCartAmount,token,Product_list,cartItems,url,delivery_charge} = useContext(StoreContext);
 
      const [data,setData]= useState({

@@ -8,6 +8,9 @@ import { useEffect } from 'react'
 import { assets } from '../../assets/assets'
 
 const MyOrders = () => {
+
+    document.title='My Order';
+
    const {url,token}= useContext(StoreContext);
   const [data,setData] = useState([]);
 

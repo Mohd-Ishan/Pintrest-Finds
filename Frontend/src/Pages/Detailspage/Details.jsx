@@ -5,6 +5,8 @@ import { StoreContext } from "../../context/StoreContext";
 
 const ProductDetails = () => {
 
+    document.title='Product Details';
+
   const { id } = useParams(); // get id from URL
    const { Product_list, addToCart, url } = useContext(StoreContext);
 

@@ -5,6 +5,8 @@ import ProjectCard from '../../Components/Project-card/ProjectCart'
 
 const Projects = () => {
 
+    document.title='Projects';
+
   const {Product_list} =useContext(StoreContext)
   return (
     <div className='Product'>
