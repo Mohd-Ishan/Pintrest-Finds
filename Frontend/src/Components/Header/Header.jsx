@@ -59,7 +59,7 @@ const prevVideo = () => {setCurrent((prev) => (prev - 1 + videoData.length) % vi
         playsInline
         onEnded={handleVideoEnd}
         className="header-video"
-      ></video>
+      ></video> 
 
       <div className="overlay">
         <div className="side-controls">
